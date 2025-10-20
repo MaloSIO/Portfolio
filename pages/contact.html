@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>MD - Portfolio - Contact</title>
+    <link rel="stylesheet" href="../Files/style.css">
+</head>
+<script src="../Files/menu.js"></script>
+<body>
+    <header>
+        <nav>
+            <a href="./Accueil.html">Accueil</a>
+            <a href="./Formations.html">Formations</a>
+            <a href="./Savoir-Faire.html">Savoir-Faire</a>
+            <a href="./Experiences.html">Expériences</a>
+            <a href="./Procédures.html">Procédures</a>
+            <a href="./L-Epreuve-E5.html">L'Epreuve E5</a>
+            <a href="./Contact.html" class="active">Contact</a>
+            <a href="./A-Propos.html">A Propos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Contact">
+            <h1>Contactez-moi</h1>
+            <p>N'hésitez pas à m'envoyer un message !</p>
+            <p>Je vous répondrai dans les plus brefs délais.</p>
+            <p>Vous pouvez aussi télécharger mon CV ou ma lettre de motivation :</p>
+            <button type="button" onclick="window.open('../Files/Download/CV.pdf')">Télécharger mon CV</button>
+            <button type="button" onclick="window.open('../Files/Download/Lettre.pdf')">Télécharger ma lettre de motivation</button>
+            <br>
+            <form action="../Files/Mail.php" method="post" netlify>
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail :</label>
+                    <input type="email" id="email" name="email" required placeholder="Votre adresse e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="objet">Objet :</label>
+                    <input type="text" id="objet" name="objet" required placeholder="Sujet de votre message">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer class="gradient-container" id="Background">
+        <p id="Text">
+            <br>Copyright - Malo DEVIC - v0.4 - 20-10-2025
+            <br>
+        </p>
+    </footer>
+</body>
+</html>
